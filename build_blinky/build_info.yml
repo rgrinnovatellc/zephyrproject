@@ -1,0 +1,61 @@
+cmake:
+  application:
+    configuration-dir: '/home/upgautam/CLionProjects/BlueFortACM2025/zephyrproject/zephyr/samples/basic/blinky'
+    source-dir: '/home/upgautam/CLionProjects/BlueFortACM2025/zephyrproject/zephyr/samples/basic/blinky'
+  board:
+    name: 'nrf52840dk'
+    path:
+     - '/home/upgautam/CLionProjects/BlueFortACM2025/zephyrproject/zephyr/boards/nordic/nrf52840dk'
+    qualifiers: 'nrf52840'
+    revision: ''
+  devicetree:
+    bindings-dirs:
+     - '/home/upgautam/CLionProjects/BlueFortACM2025/zephyrproject/zephyr/dts/bindings'
+    files:
+     - '/home/upgautam/CLionProjects/BlueFortACM2025/zephyrproject/zephyr/boards/nordic/nrf52840dk/nrf52840dk_nrf52840.dts'
+    include-dirs:
+     - '/home/upgautam/CLionProjects/BlueFortACM2025/zephyrproject/modules/hal/ambiq/dts'
+     - '/home/upgautam/CLionProjects/BlueFortACM2025/zephyrproject/modules/hal/atmel/include'
+     - '/home/upgautam/CLionProjects/BlueFortACM2025/zephyrproject/modules/hal/bouffalolab/include'
+     - '/home/upgautam/CLionProjects/BlueFortACM2025/zephyrproject/modules/hal/bouffalolab/include/zephyr'
+     - '/home/upgautam/CLionProjects/BlueFortACM2025/zephyrproject/modules/hal/gigadevice/include'
+     - '/home/upgautam/CLionProjects/BlueFortACM2025/zephyrproject/modules/hal/microchip/include'
+     - '/home/upgautam/CLionProjects/BlueFortACM2025/zephyrproject/modules/hal/microchip/dts'
+     - '/home/upgautam/CLionProjects/BlueFortACM2025/zephyrproject/modules/hal/nuvoton/dts'
+     - '/home/upgautam/CLionProjects/BlueFortACM2025/zephyrproject/modules/hal/nxp/dts'
+     - '/home/upgautam/CLionProjects/BlueFortACM2025/zephyrproject/modules/hal/stm32/dts'
+     - '/home/upgautam/CLionProjects/BlueFortACM2025/zephyrproject/modules/hal/ti/dts'
+     - '/home/upgautam/CLionProjects/BlueFortACM2025/zephyrproject/zephyr/include'
+     - '/home/upgautam/CLionProjects/BlueFortACM2025/zephyrproject/zephyr/include/zephyr'
+     - '/home/upgautam/CLionProjects/BlueFortACM2025/zephyrproject/zephyr/dts/common'
+     - '/home/upgautam/CLionProjects/BlueFortACM2025/zephyrproject/zephyr/dts/vendor'
+     - '/home/upgautam/CLionProjects/BlueFortACM2025/zephyrproject/zephyr/dts/rx'
+     - '/home/upgautam/CLionProjects/BlueFortACM2025/zephyrproject/zephyr/dts/x86'
+     - '/home/upgautam/CLionProjects/BlueFortACM2025/zephyrproject/zephyr/dts/xtensa'
+     - '/home/upgautam/CLionProjects/BlueFortACM2025/zephyrproject/zephyr/dts/sparc'
+     - '/home/upgautam/CLionProjects/BlueFortACM2025/zephyrproject/zephyr/dts/riscv'
+     - '/home/upgautam/CLionProjects/BlueFortACM2025/zephyrproject/zephyr/dts/posix'
+     - '/home/upgautam/CLionProjects/BlueFortACM2025/zephyrproject/zephyr/dts/arm64'
+     - '/home/upgautam/CLionProjects/BlueFortACM2025/zephyrproject/zephyr/dts/arm'
+     - '/home/upgautam/CLionProjects/BlueFortACM2025/zephyrproject/zephyr/dts/arc'
+     - '/home/upgautam/CLionProjects/BlueFortACM2025/zephyrproject/zephyr/dts'
+  kconfig:
+    files:
+     - '/home/upgautam/CLionProjects/BlueFortACM2025/zephyrproject/zephyr/boards/nordic/nrf52840dk/nrf52840dk_nrf52840_defconfig'
+     - '/home/upgautam/CLionProjects/BlueFortACM2025/zephyrproject/zephyr/samples/basic/blinky/prj.conf'
+    user-files:
+     - '/home/upgautam/CLionProjects/BlueFortACM2025/zephyrproject/zephyr/samples/basic/blinky/prj.conf'
+  toolchain:
+    name: 'zephyr'
+    path: '/home/upgautam/zephyr-sdk-0.17.2'
+  vendor-specific:
+    nordic:
+      svdfile: '/home/upgautam/CLionProjects/BlueFortACM2025/zephyrproject/modules/hal/nordic/nrfx/mdk/nrf52840.svd'
+  zephyr:
+    version: '4.2.99'
+    zephyr-base: '/home/upgautam/CLionProjects/BlueFortACM2025/zephyrproject/zephyr'
+version: '0.1.0'
+west:
+  command: '/home/upgautam/CLionProjects/BlueFortACM2025/.venv/bin/west build -p always -b nrf52840dk/nrf52840 -d build_blinky zephyr/samples/basic/blinky'
+  topdir: '/home/upgautam/CLionProjects/BlueFortACM2025/zephyrproject'
+  version: '1.4.0'

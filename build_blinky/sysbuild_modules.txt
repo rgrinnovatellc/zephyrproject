@@ -1,0 +1,1 @@
+"mcuboot":"/home/upgautam/CLionProjects/BlueFortACM2025/zephyrproject/bootloader/mcuboot":"/home/upgautam/CLionProjects/BlueFortACM2025/zephyrproject/bootloader/mcuboot/boot/zephyr/sysbuild"
